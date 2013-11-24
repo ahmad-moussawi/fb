@@ -13,8 +13,8 @@ $facebook = new Facebook($config);
 
 // get the user id, returns 0 if not loggged in 
 //$facebook->getUser();
-$myMessage = 'Hello';
-if ($facebook->api('me/feed', 'post', array('message' => $myMessage))) {
+$myMessage = 'Post to Arine';
+if ($facebook->api('ArinResidence/feed', 'post', array('message' => $myMessage))) {
     echo "Message posted";
 } else {
     echo "Error occured";
